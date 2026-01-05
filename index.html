@@ -698,7 +698,7 @@
     // Bind all Calendly CTAs
     (function () {
       function setCalendlyHref(el) {
-        if (!window.https://calendly.com/nadia-zorr/30min || window.CALENDLY_URL === "CALENDLY_URL") {
+        if (!window.CALENDLY_URL || window.CALENDLY_URL === "CALENDLY_URL") {
           // fallback: si tu oublies de remplacer, on évite un lien cassé
           el.setAttribute("href", "https://zorrooo.com/plans");
           el.setAttribute("target", "_blank");
