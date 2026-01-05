@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Commissaires de justice : recevez des dossiers amiables qualifiés | Zorrooo</title>
+  <meta name="description" content="Développez votre activité : dossiers amiables qualifiés partout en France, profil certifié, notifications ciblées, paiement & facturation en ligne. Réservez un RDV." />
+  <link rel="canonical" href="https://zorrooo.com/commissaire-de-justice" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Commissaires de justice : recevez des dossiers amiables qualifiés | Zorrooo" />
+  <meta property="og:description" content="Recevez des dossiers amiables qualifiés partout en France. Réservez un RDV et découvrez le fonctionnement." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zorrooo.com/commissaire-de-justice" />
+  <!-- <meta property="og:image" content="https://zorrooo.com/path/to/og-image.jpg" /> -->
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Commissaires de justice : recevez des dossiers amiables qualifiés | Zorrooo" />
+  <meta name="twitter:description" content="Recevez des dossiers amiables qualifiés partout en France. Réservez un RDV." />
+  <!-- <meta name="twitter:image" content="https://zorrooo.com/path/to/og-image.jpg" /> -->
+
+  <style>
+    :root{
+      --bg: #0b0f17;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.08);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.72);
+      --faint: rgba(255,255,255,.55);
+      --line: rgba(255,255,255,.12);
+      --brand: #7c5cff;
+      --brand2: #2ee6a6;
+      --danger: #ff5c8a;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --max: 1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(900px 450px at 20% 10%, rgba(124,92,255,.25), transparent 55%),
+        radial-gradient(900px 450px at 80% 20%, rgba(46,230,166,.18), transparent 55%),
+        radial-gradient(700px 420px at 50% 100%, rgba(255,92,138,.12), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      line-height:1.45;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 20px;}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,23,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar .inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px;
+      font-weight:800; letter-spacing:.3px;
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    .logo-badge{
+      width:34px; height:34px; border-radius:12px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: 0 10px 18px rgba(124,92,255,.18);
+      display:grid; place-items:center;
+      font-weight:900;
+    }
+    nav{
+      display:flex; align-items:center; gap:16px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    nav a{
+      text-decoration:none;
+      color: var(--muted);
+      font-size:14px;
+    }
+    nav a:hover{color: var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      text-decoration:none;
+      font-weight:650;
+      box-shadow: none;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      cursor:pointer;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.2);}
+    .btn.primary{
+      border: none;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      color: #081018;
+      box-shadow: 0 14px 24px rgba(124,92,255,.18);
+    }
+    .btn.primary:hover{transform: translateY(-1px); filter: brightness(1.02);}
+    .hero{
+      padding: 54px 0 26px;
+    }
+    .grid-hero{
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    @media (max-width: 920px){
+      .grid-hero{grid-template-columns: 1fr;}
+      nav{display:none;}
+    }
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+      width: fit-content;
+    }
+    .dot{
+      width:8px; height:8px; border-radius:99px;
+      background: var(--brand2);
+      box-shadow: 0 0 0 6px rgba(46,230,166,.12);
+    }
+    h1{
+      margin: 14px 0 12px;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height:1.08;
+      letter-spacing: -0.8px;
+    }
+    .lead{
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 62ch;
+    }
+    .cta-row{
+      display:flex; gap:12px; flex-wrap:wrap;
+      margin-top: 18px;
+      align-items:center;
+    }
+    .micro{
+      margin-top: 10px;
+      color: var(--faint);
+      font-size: 13px;
+    }
+    .card{
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .card h3{
+      margin: 0 0 6px;
+      font-size: 16px;
+      letter-spacing: -.2px;
+    }
+    .card p{margin:0; color: var(--muted); font-size: 14px;}
+    .stack{display:grid; gap:12px;}
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 12px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .badge strong{color: var(--text)}
+    section{padding: 26px 0;}
+    .section-title{
+      display:flex; justify-content:space-between; align-items:flex-end; gap:14px;
+      margin-bottom: 14px;
+    }
+    h2{
+      margin:0;
+      font-size: clamp(22px, 2.4vw, 30px);
+      letter-spacing: -0.4px;
+    }
+    .sub{
+      margin: 6px 0 0;
+      color: var(--muted);
+      max-width: 80ch;
+      font-size: 15px;
+    }
+    .cols-3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 920px){ .cols-3{grid-template-columns:1fr;} }
+    ul.clean{margin: 10px 0 0; padding-left: 18px; color: var(--muted);}
+    ul.clean li{margin:6px 0}
+    .how{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 920px){ .how{grid-template-columns:1fr;} }
+    .step{
+      display:flex; gap:14px;
+      padding:16px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--card);
+    }
+    .num{
+      width:34px; height:34px; border-radius: 12px;
+      background: rgba(124,92,255,.18);
+      border: 1px solid rgba(124,92,255,.35);
+      display:grid; place-items:center;
+      font-weight: 900;
+      color: var(--text);
+      flex: 0 0 auto;
+    }
+    .pricing{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+    @media (max-width: 920px){ .pricing{grid-template-columns:1fr;} }
+    .price{
+      position:relative;
+      overflow:hidden;
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.045));
+    }
+    .price .top{
+      display:flex; justify-content:space-between; align-items:center; gap:10px;
+      margin-bottom: 8px;
+    }
+    .pill{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      background: rgba(255,255,255,.05);
+      white-space:nowrap;
+    }
+    .amount{
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: -0.6px;
+      margin: 8px 0 8px;
+    }
+    .amount small{font-size: 14px; font-weight: 700; color: var(--muted)}
+    .divider{height:1px; background: var(--line); margin: 14px 0;}
+    .price ul{margin:0; padding-left:18px; color: var(--muted)}
+    .price li{margin:8px 0}
+    .price .cta-row{margin-top: 14px;}
+    .note{
+      font-size: 13px;
+      color: var(--faint);
+      margin-top: 10px;
+    }
+    .faq{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    details{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      padding: 14px 16px;
+    }
+    summary{
+      cursor:pointer;
+      list-style:none;
+      font-weight: 750;
+      letter-spacing: -.2px;
+    }
+    summary::-webkit-details-marker{display:none;}
+    details p{margin:10px 0 0; color: var(--muted);}
+    .cta-band{
+      padding: 22px;
+      background: linear-gradient(135deg, rgba(124,92,255,.18), rgba(46,230,166,.14));
+      border:1px solid rgba(255,255,255,.14);
+      border-radius: calc(var(--radius) + 6px);
+      box-shadow: var(--shadow);
+    }
+    footer{
+      padding: 32px 0 44px;
+      color: var(--faint);
+      border-top: 1px solid var(--line);
+      margin-top: 24px;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns: 1.4fr .6fr;
+      gap: 14px;
+    }
+    @media (max-width: 920px){ .footer-grid{grid-template-columns:1fr;} }
+    .small{font-size: 12.5px; color: var(--faint);}
+  </style>
+
+  <!-- FAQ Schema (à personnaliser si tu modifies la FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Les dossiers sont-ils vraiment qualifiés ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les demandes sont structurées (problème, attente, partie adverse, montant) afin de vous permettre de décider rapidement si vous souhaitez traiter le dossier."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Suis-je en concurrence avec d’autres experts ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vous gardez la main : vous acceptez ou non les dossiers. L’objectif est de favoriser la pertinence via des notifications ciblées selon vos compétences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment la confidentialité est-elle gérée ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aucune donnée personnelle ou pièce justificative n’est exposée publiquement. Les éléments sensibles sont partagés en privé, à l’initiative du demandeur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment je facture ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Selon la formule : plafonnée sur Découverte, ou facturation libre sur Premium."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Remplace par ton vrai lien Calendly -->
+  <script>
+    window.CALENDLY_URL = "CALENDLY_URL";
+  </script>
+
+  <header class="topbar">
+    <div class="wrap">
+      <div class="inner">
+        <a class="logo" href="#top" aria-label="Zorrooo">
+          <span class="logo-badge">Z</span>
+          <span>Zorrooo</span>
+        </a>
+
+        <nav aria-label="Navigation">
+          <a href="#avantages">Avantages</a>
+          <a href="#dossiers">Dossiers</a>
+          <a href="#comment">Comment ça marche</a>
+          <a href="#tarifs">Tarifs</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <a class="btn primary" id="cta-top" href="#" data-calendly>Réserver un RDV</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="grid-hero">
+          <div>
+            <div class="kicker"><span class="dot"></span> Acquisition experts | France entière | Amiable prioritaire</div>
+            <h1>Recevez des dossiers amiables qualifiés. Partout en France.</h1>
+            <p class="lead">
+              Zorrooo connecte des particuliers en litige avec des professionnels du droit.
+              En tant que <strong>commissaire de justice</strong> (ex-huissier), vous recevez des dossiers ciblés,
+              vous choisissez ceux que vous traitez, et vous facturez simplement via la plateforme.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn primary" id="cta-hero" href="#" data-calendly>Réserver un RDV (15 min)</a>
+              <a class="btn" href="#comment">Voir comment ça marche</a>
+            </div>
+            <div class="micro">Sans engagement. On vous montre des dossiers types et le fonctionnement.</div>
+
+            <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
+              <span class="badge"><strong>Priorité amiable</strong> • recouvrement, mise en demeure, négociation</span>
+              <span class="badge"><strong>Vous gardez la main</strong> • acceptez ou refusez</span>
+              <span class="badge"><strong>Opérationnel vite</strong> • profil + notifications</span>
+            </div>
+          </div>
+
+          <aside class="stack" aria-label="Points clés">
+            <div class="card">
+              <h3>Profil certifié</h3>
+              <p>Un label de confiance pour renforcer votre visibilité et votre crédibilité.</p>
+            </div>
+            <div class="card">
+              <h3>Notifications ciblées</h3>
+              <p>Soyez alerté des nouveaux dossiers correspondant à vos compétences.</p>
+            </div>
+            <div class="card">
+              <h3>Paiement & facturation en ligne</h3>
+              <p>Simplifiez la contractualisation et le règlement via la plateforme.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- AVANTAGES -->
+      <section id="avantages">
+        <div class="section-title">
+          <div>
+            <h2>Ce que Zorrooo change pour votre étude</h2>
+            <p class="sub">Un flux de dossiers sans prospection lourde, avec un cadre clair et des outils pensés pour aller vite.</p>
+          </div>
+        </div>
+
+        <div class="cols-3">
+          <div class="card">
+            <h3>Dossiers qualifiés</h3>
+            <p>Demande structurée, contexte suffisant, attente explicite. Vous décidez en connaissance de cause.</p>
+            <ul class="clean">
+              <li>Contexte + objectif</li>
+              <li>Montant du litige</li>
+              <li>Partie adverse indiquée</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Amiable d’abord</h3>
+            <p>Priorité aux solutions pragmatiques : mise en demeure, recouvrement amiable, négociation, protocole.</p>
+            <ul class="clean">
+              <li>Recouvrement amiable</li>
+              <li>Mise en demeure</li>
+              <li>Négociation encadrée</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Vous gardez la main</h3>
+            <p>Vous choisissez les dossiers. Pas d’obligation. Paramétrage simple selon vos préférences.</p>
+            <ul class="clean">
+              <li>Accepter ou refuser</li>
+              <li>Limiter le volume</li>
+              <li>Adapter votre périmètre</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOSSIERS -->
+      <section id="dossiers">
+        <div class="section-title">
+          <div>
+            <h2>Pour quels types de dossiers ?</h2>
+            <p class="sub">Priorité à l’amiable et à la résolution rapide, partout en France.</p>
+          </div>
+        </div>
+
+        <div class="cols-3">
+          <div class="card">
+            <h3>Recouvrement amiable</h3>
+            <p>Impayés, relances structurées, échéanciers, recadrage contractuel.</p>
+          </div>
+          <div class="card">
+            <h3>Mise en demeure</h3>
+            <p>Courrier cadré, pression légitime, chronologie et preuves préparées en privé.</p>
+          </div>
+          <div class="card">
+            <h3>Litiges de consommation</h3>
+            <p>Prestations non conformes, retards, annulations, SAV, abonnements.</p>
+          </div>
+        </div>
+
+        <p class="note">
+          Note SEO : la page utilise aussi le terme « huissier de justice » (ancienne dénomination) pour capter les recherches, tout en restant exacte.
+        </p>
+      </section>
+
+      <!-- COMMENT ÇA MARCHE -->
+      <section id="comment">
+        <div class="section-title">
+          <div>
+            <h2>Comment ça marche</h2>
+            <p class="sub">Un parcours simple : visibilité publique, puis échanges privés si besoin, puis prestation si pertinent.</p>
+          </div>
+        </div>
+
+        <div class="how">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <strong>RDV de cadrage</strong>
+              <p class="small">On définit votre périmètre (amiable, typologies, volume souhaité, disponibilité).</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <strong>Création de votre profil</strong>
+              <p class="small">Profil, domaines, vitrine et éléments de réassurance pour inspirer confiance.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <strong>Notifications ciblées</strong>
+              <p class="small">Vous recevez les nouveaux dossiers correspondant à vos compétences.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">4</div>
+            <div>
+              <strong>Vous choisissez vos dossiers</strong>
+              <p class="small">Vous acceptez, refusez, ou orientez. Zéro obligation.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">5</div>
+            <div>
+              <strong>Paiement & facturation en ligne</strong>
+              <p class="small">Process fluide pour contractualiser et encaisser selon la formule.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">6</div>
+            <div>
+              <strong>Suivi des dossiers</strong>
+              <p class="small">Centralisation des échanges et historique, pour une exécution propre.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;" class="cta-band">
+          <div class="section-title" style="margin-bottom:10px;">
+            <div>
+              <h2 style="font-size:22px;">Voyons si Zorrooo est un bon fit pour votre étude</h2>
+              <p class="sub" style="margin-top:6px;">
+                En 15 minutes : typologies, volume souhaité, paramétrage. Sans engagement.
+              </p>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" id="cta-band" href="#" data-calendly>Réserver mon RDV</a>
+            <a class="btn" href="#tarifs">Voir les tarifs</a>
+          </div>
+          <div class="micro">Objectif : vous donner une vision claire, pas vous faire perdre du temps.</div>
+        </div>
+      </section>
+
+      <!-- TARIFS -->
+      <section id="tarifs">
+        <div class="section-title">
+          <div>
+            <h2>Tarifs</h2>
+            <p class="sub">Deux formules pour démarrer selon votre pratique et vos ambitions.</p>
+          </div>
+        </div>
+
+        <div class="pricing">
+          <div class="card price" aria-label="Plan Découverte">
+            <div class="top">
+              <h3 style="margin:0;">Découverte</h3>
+              <span class="pill">Zéro engagement</span>
+            </div>
+            <div class="amount">Gratuit</div>
+            <div class="small">Préjudice jusqu’à <strong>5 000 €</strong></div>
+
+            <div class="divider"></div>
+            <ul>
+              <li>De <strong>0 à 750 €</strong> : litiges illimités</li>
+              <li>De <strong>750 à 5 000 €</strong> : <strong>7 litiges/mois</strong></li>
+              <li>Honoraires : facturation jusqu’à <strong>100 €</strong></li>
+              <li>Prestation en vitrine <strong>x1</strong></li>
+            </ul>
+
+            <div class="cta-row">
+              <a class="btn primary" id="cta-pricing-discovery" href="#" data-calendly>Choisir ce plan en RDV</a>
+              <a class="btn" href="https://zorrooo.com/plans" target="_blank" rel="noopener">Voir la page Plans</a>
+            </div>
+            <div class="note">Idéal pour tester et calibrer votre flux de dossiers.</div>
+          </div>
+
+          <div class="card price" aria-label="Plan Premium">
+            <div class="top">
+              <h3 style="margin:0;">Premium</h3>
+              <span class="pill">Boost revenus</span>
+            </div>
+            <div class="amount">240 <small>€ HT/an</small></div>
+            <div class="small">Préjudice jusqu’à <strong>25 000 €</strong></div>
+
+            <div class="divider"></div>
+            <ul>
+              <li>De <strong>0 à 750 €</strong> : litiges illimités</li>
+              <li>De <strong>750 à 25 000 €</strong> : <strong>30 litiges/mois</strong> (puis <strong>1 €/u.</strong>)</li>
+              <li>Honoraires : <strong>facturation libre</strong></li>
+              <li>Prestation en vitrine <strong>x3</strong></li>
+            </ul>
+
+            <div class="cta-row">
+              <a class="btn primary" id="cta-pricing-premium" href="#" data-calendly>Choisir ce plan en RDV</a>
+              <a class="btn" href="https://zorrooo.com/plans" target="_blank" rel="noopener">Voir la page Plans</a>
+            </div>
+            <div class="note">Pensé pour augmenter le volume et facturer librement.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="section-title">
+          <div>
+            <h2>FAQ</h2>
+            <p class="sub">Les objections les plus fréquentes, version claire et directe.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Les dossiers sont-ils vraiment “qualifiés” ?</summary>
+            <p>Les demandes sont structurées (problème, attente, partie adverse, montant). L’objectif est de vous permettre de décider rapidement si vous traitez ou non.</p>
+          </details>
+
+          <details>
+            <summary>Suis-je en concurrence avec d’autres experts ?</summary>
+            <p>Vous gardez la main : vous acceptez ou refusez. Les notifications visent la pertinence selon vos compétences et votre périmètre.</p>
+          </details>
+
+          <details>
+            <summary>Comment la confidentialité est-elle gérée ?</summary>
+            <p>Aucune donnée personnelle ou pièce justificative n’est exposée publiquement. Les éléments sensibles se partagent en privé, à l’initiative du demandeur.</p>
+          </details>
+
+          <details>
+            <summary>Comment je facture ?</summary>
+            <p>Selon la formule : facturation plafonnée sur Découverte, ou facturation libre sur Premium.</p>
+          </details>
+
+          <details>
+            <summary>Puis-je me concentrer uniquement sur l’amiable ?</summary>
+            <p>Oui. On paramètre ensemble votre champ d’intervention, vos typologies prioritaires, et éventuellement un volume maximal.</p>
+          </details>
+        </div>
+
+        <div style="margin-top:16px;" class="cta-row">
+          <a class="btn primary" id="cta-faq" href="#" data-calendly>Réserver un RDV</a>
+          <a class="btn" href="#top">Remonter</a>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-grid">
+          <div>
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+              <span class="logo-badge" aria-hidden="true">Z</span>
+              <strong>Zorrooo</strong>
+            </div>
+            <div class="small">
+              Zorrooo connecte les particuliers en litige à des professionnels du droit pour obtenir une première aide, puis un accompagnement si nécessaire.
+              <br/>
+              <a href="https://zorrooo.com/plans" target="_blank" rel="noopener">Plans</a> ·
+              <a href="https://zorrooo.com/tutorial-expert" target="_blank" rel="noopener">Tutoriel expert</a> ·
+              <a href="https://zorrooo.com/Politique-de-confidentialite" target="_blank" rel="noopener">Confidentialité</a>
+            </div>
+          </div>
+          <div class="small">
+            <strong>CTA</strong><br/>
+            Réserver un RDV pour activer votre profil et calibrer votre flux de dossiers.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    // Bind all Calendly CTAs
+    (function () {
+      function setCalendlyHref(el) {
+        if (!window.https://calendly.com/nadia-zorr/30min || window.CALENDLY_URL === "CALENDLY_URL") {
+          // fallback: si tu oublies de remplacer, on évite un lien cassé
+          el.setAttribute("href", "https://zorrooo.com/plans");
+          el.setAttribute("target", "_blank");
+          el.setAttribute("rel", "noopener");
+          return;
+        }
+        el.setAttribute("href", window.CALENDLY_URL);
+        el.setAttribute("target", "_blank");
+        el.setAttribute("rel", "noopener");
+      }
+
+      document.querySelectorAll("[data-calendly]").forEach(function (btn) {
+        setCalendlyHref(btn);
+      });
+
+      // Optionnel: tracking simple (remplace par GTM/GA4 si besoin)
+      document.querySelectorAll("[data-calendly]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          // console.log("Calendly CTA clicked:", btn.id || "(no-id)");
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
